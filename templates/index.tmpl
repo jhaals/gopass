@@ -1,0 +1,34 @@
+<div class="ui form segment">
+  <div class="ui error message"></div>
+  <p>Submit your secret and receive a one time view url</p>
+  <form role="form" method="post">
+  <div class="ui form">
+    <div class="field">
+      <label>Your Secret</label>
+      <textarea id="secret" name="secret"></textarea>
+    </div>
+
+    <div class="grouped inline fields">
+      <label>Self destruct after</label>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" name="lifetime" value="1w" checked="checked">
+          <label>1 Week</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" name="lifetime" value="1h">
+          <label>1 Day</label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="ui radio checkbox">
+          <input type="radio" name="lifetime" value="1h">
+          <label>1 Hour</label>
+        </div>
+      </div>
+  </div>
+  <button type="submit" class="ui blue submit button">Store Secret</button>
+</form>
+</div>
